@@ -31,13 +31,13 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "cp -R **/target/*.war ''/Users/dgertsch/Documents/Jenkins Classes/tomcat-staging/webapps/''"
+                        sh "cp -R **/target/*.war '/Users/dgertsch/Documents/Jenkins Classes/tomcat-staging/webapps/'"
                     }
                 }
 
                 stage ("Deploy to Production"){
                     steps {
-                        sh "cp -R **/target/*.war ''/Users/dgertsch/Documents/Jenkins Classes/tomcat-production/webapps/''"
+                        sh "cp -R **/target/*.war '/Users/dgertsch/Documents/Jenkins Classes/tomcat-production/webapps/'"
                     }
                 }
             }
